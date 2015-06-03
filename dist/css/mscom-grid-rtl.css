@@ -10,6 +10,26 @@
   max-width: 1600px;
   padding-left: 12px;
   padding-right: 12px; }
+  .ms-grid.vertical-spacing .ms-row {
+    margin-left: -1em;
+    margin-right: -1em;
+    margin-top: -1em;
+    margin-bottom: -1em; }
+    .ms-grid.vertical-spacing .ms-row > [class*="col-"] {
+      padding-left: 1em;
+      padding-right: 1em;
+      padding-top: 1em;
+      padding-bottom: 1em; }
+  .ms-grid.vertical-spacing .ms-row {
+    margin-left: -1vw;
+    margin-right: -1vw;
+    margin-top: -1vw;
+    margin-bottom: -1vw; }
+    .ms-grid.vertical-spacing .ms-row > [class*="col-"] {
+      padding-left: 1vw;
+      padding-right: 1vw;
+      padding-top: 1vw;
+      padding-bottom: 1vw; }
   .ms-grid.full {
     max-width: none;
     padding-left: 0;

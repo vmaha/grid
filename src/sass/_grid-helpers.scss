@@ -1,13 +1,26 @@
-    @mixin row($padding) {
+    @mixin row($padding, $includeVerticalSpacing: false) {
         .#{$grid-prefix}row {
             margin-left: -$padding;
             margin-right: -$padding;
+            @if ($includeVerticalSpacing){
+                margin-top: -$padding;
+                margin-bottom: -$padding;
+            }
 
             & > [class*="col-"] {
                 padding-left: $padding;
                 padding-right: $padding;
+                @if ($includeVerticalSpacing){
+                    padding-top: $padding;
+                    padding-bottom: $padding;
+                }
             }
         }
+    }
+
+    &.vertical-spacing {
+        @include row(1em, true);
+        @include row(1vw, true);
     }
 
     &.full {
@@ -16,7 +29,7 @@
         padding-right: 0;
         width: 100%;
         overflow-x: hidden;
-    }    
+    }
 
     &.fixed {
         @include row($fixed-standard);

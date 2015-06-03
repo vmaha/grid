@@ -80,6 +80,26 @@ body.offsetopened {
   max-width: 1600px;
   padding-left: 12px;
   padding-right: 12px; }
+  .ms-grid.vertical-spacing .ms-row {
+    margin-left: -1em;
+    margin-right: -1em;
+    margin-top: -1em;
+    margin-bottom: -1em; }
+    .ms-grid.vertical-spacing .ms-row > [class*="col-"] {
+      padding-left: 1em;
+      padding-right: 1em;
+      padding-top: 1em;
+      padding-bottom: 1em; }
+  .ms-grid.vertical-spacing .ms-row {
+    margin-left: -1vw;
+    margin-right: -1vw;
+    margin-top: -1vw;
+    margin-bottom: -1vw; }
+    .ms-grid.vertical-spacing .ms-row > [class*="col-"] {
+      padding-left: 1vw;
+      padding-right: 1vw;
+      padding-top: 1vw;
+      padding-bottom: 1vw; }
   .ms-grid.full {
     max-width: none;
     padding-left: 0;
@@ -6269,8 +6289,6 @@ body.offsetopened {
       flex: 1; }
   .complex-layouts .pink-bgc, .complex-layouts .blue-bgc {
     min-height: 5em; }
-  .complex-layouts.pinterest .uno > .ms-row > div, .complex-layouts.pinterest .dos > .ms-row > div, .complex-layouts.pinterest .tres > .ms-row > div {
-    margin-bottom: 1em; }
   .complex-layouts.pinterest .uno > .ms-row div:nth-of-type(even) .filler {
     height: 9em; }
   .complex-layouts.pinterest .uno > .ms-row div:nth-of-type(odd) .filler {
